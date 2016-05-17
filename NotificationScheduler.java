@@ -26,7 +26,7 @@ public class NotificationScheduler
     {
         this.mContext = mContext;
         this.object = object;
-        this.id = Integer.parseInt(film.getId());
+        this.id = Integer.parseInt(object.getId());
         this.alarmManager = (AlarmManager) mContext.getSystemService(Context.ALARM_SERVICE);
     }
 
