@@ -48,7 +48,7 @@ public class NotificationScheduler
 
     public void scheduleNotification()
     {
-        Notification notification = getDefaultNotification(id, film);
+        Notification notification = getDefaultNotification(id, object);
         Intent notificationIntent = new Intent(mContext, NotificationPublisher.class);
         notificationIntent.putExtra("NOTIFICATION_ID", id);
         notificationIntent.putExtra("NOTIFICATION", notification);
